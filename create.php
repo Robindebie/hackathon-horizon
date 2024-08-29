@@ -18,6 +18,43 @@
     $statement->bindValue(':ranks', $_POST['ranks'], PDO::PARAM_STR);
 
     $statement->execute();
+    
+    $dataRows = '';
 
-    echo implode(" ", $_POST);
+    $dataRows = "<tr>
+        <td>{$_POST['Name']}</td>
+        <td>{$_POST['ranks']}</td>
+    </tr>";
+
+
+    $data = [
+        'dataRows' => $dataRows
+    ];
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guests</title>
+    <link rel="stylesheet" href="styleH.css">
+</head>
+<body>
+    <div id="test">
+        <img src="foto's/BMTH.png" alt="Bring me the horizon band">
+
+        <table class="table guestList">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Ranks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?= $data['dataRows']; ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
