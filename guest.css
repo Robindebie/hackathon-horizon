@@ -44,8 +44,6 @@ body {
     z-index: 2;
 }
 
-.testNav {
-    height: 100%;
-    position: sticky;
-    z-index: 2;
+.guestlist {
+    border-radius: .5rem;
 }
