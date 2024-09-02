@@ -21,8 +21,6 @@
 
         <button type="submit">submit</button>
     </form>
-
-    <a href="create.php">test</a>
 </body>
 </html>
 
@@ -45,4 +43,6 @@
     $statement->bindValue(':ranks', $_POST['ranks'], PDO::PARAM_STR);
 
     $statement->execute();
+
+    header("Refresh:1, url=create.php");
 ?>

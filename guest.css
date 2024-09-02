@@ -43,3 +43,9 @@ body {
     position: absolute;
     z-index: 2;
 }
+
+.testNav {
+    height: 100%;
+    position: sticky;
+    z-index: 2;
+}
