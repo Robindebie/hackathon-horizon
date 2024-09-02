@@ -1,23 +1,11 @@
-.logo {
-    width: 80px;
-}
-
 body {
-    height: 100vh;
-}
-
-.container {
-    height: 100%;
-}
-
-.row {
-    height: 100%;
+    margin: 0;
 }
 
 #banner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 #banner > img {
@@ -39,42 +27,38 @@ body {
     z-index: 2;
 }
 
-.test {
-    position: absolute;
-    z-index: 2;
-}
-
-.guestlist {
-    border-radius: .5rem;
-}
-
-.navbar {
-    top: 15rem;
-}
-
-.navLinks {
+.main-navbar {
     position: fixed;
     z-index: 5;
-    padding-left: 2.5rem;
+    margin-top: 2rem;
 }
 
-.navLinks > img {
-    width: 5rem;
-}
-
-.navLinks > ul {
-    margin-top: 5rem;
+.main-navbar > aside > ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 2rem;
+    margin-top: 3rem;
 }
 
-li > a {
-    color: white;
-    cursor: pointer;
+.main-navbar > aside > ul > li > a {
     text-decoration: none;
-    font-size: 3rem;
-
+    color: white;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
+    font-size: 3.5rem;
+
+    cursor: pointer;
+}
+
+.main-navbar > aside > ul > li:hover {
+    background-color: #A13131;
+}
+
+.main-navbar > aside > ul > li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.main-navbar > aside > img{
+    padding-left: 3rem;
 }
