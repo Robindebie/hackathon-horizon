@@ -47,3 +47,34 @@ body {
 .guestlist {
     border-radius: .5rem;
 }
+
+.navbar {
+    top: 15rem;
+}
+
+.navLinks {
+    position: fixed;
+    z-index: 5;
+    padding-left: 2.5rem;
+}
+
+.navLinks > img {
+    width: 5rem;
+}
+
+.navLinks > ul {
+    margin-top: 5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+li > a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}

@@ -35,21 +35,23 @@
     <title>Guests</title>
     <link rel="stylesheet" href="guest.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="navbar">
-        <aside class="testNav">
-            <img class="raar" src="foto's/image copy.png" alt="">
+    <div class="navbar">
+        <aside class="navLinks">
+            <img src="foto's/image.png" alt="">
 
-            <nav>
-                <ul>
-                    <li class="Home"><a href="index.html" class="active">Home</a></li>
-                    <li class="Tickets"><a href="ticket.php">Get tickets</a></li>
-                    <li class="Quest"><a href="create.php">guest</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Get tickets</a></li>
+                <li><a href="#">Guests</a></li>
+            </ul>
         </aside>
-    </div> -->
+    </div>
 
     <div id="banner">
         <img src="foto's/BMTH.png" alt="Bring me the horizon band">
