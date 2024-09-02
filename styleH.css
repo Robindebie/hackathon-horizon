@@ -1,19 +1,27 @@
-/* body {
+ body {
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: top;
+    z-index: 5;
     margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('foto\'s/achtergrond.png');
   }
 
 
-  .footer{
-    background-color: rgb(86, 86, 86);
-    position: absolute;
-    bottom: -1%;
-    left: 0%;
-    height: 250px;  
-    width: 100%;
+  .footer {
+    background-color: #666; /* Grijze kleur voor de footer */
+    color: white;
+    padding: 20px;
     text-align: center;
+    height: 300px;
+}
+    
+    .container{
+        min-height: 100vh; /* Zorg ervoor dat de container minstens de hoogte van de viewport heeft */
+        background-size: contain; /* Of gebruik cover afhankelijk van je voorkeur */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     
     
   }
@@ -35,6 +43,7 @@ color: rgb(181, 181, 181);
  
 
   nav ol {
+    
     position: absolute;
     list-style: none;
     top: 5%;
@@ -48,6 +57,7 @@ nav ol li {
 
 ol li {
     
+    z-index: 5;
     color: rgb(255, 255, 255);
     font-family: merrriweather;
     font-size: 1.5em;
@@ -64,13 +74,14 @@ li a:hover {
     color: rgb(255, 0, 0);
 }
 nav ol:active {
+    
     color: rgb(251, 28, 28);
     font-weight: bold;
 }
 
 nav a.active {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     filter: brightness(500%);
 }
 
@@ -80,4 +91,28 @@ nav a.active {
     left: 45%;
     color: darkgray;
     bottom: 1%;
-  } */
+    height: 25rem;
+  } 
+  .block {
+    width: 23rem;
+    height: 7rem;
+    position: absolute;
+    top: -5px;
+    z-index: 1;
+    background-color: #A13131;
+    margin-top: 10px; /* Add space between the text and the block */
+}
+.text {
+    position: relative;
+    z-index: 2; /* Put the text above the block */
+    color: white;
+    margin: 0;
+    padding: 10px 10px; /* Add padding around the text */
+    font-size: 6rem;
+}
+.baa{
+    font-size: small;
+}
+.bee{
+    font-size: x-large;
+}
